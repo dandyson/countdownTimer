@@ -15,6 +15,7 @@ button.forEach(option => {
 userInput.addEventListener('change', displayUserValue);
 
 function displayUserValue() {
+    clearInterval(timeCounter);
     let userNum = userInput.value;
     timeLeft.textContent = userInput.value;
     let userSplit = userNum.split(':');
